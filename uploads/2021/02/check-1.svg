@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#118cd9;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="check-1" transform="translate(-756 -2442)">
+        <g id="checkmark" transform="translate(765.716 2453.567)">
+            <path id="Line_1" d="M0 0L4 4" class="cls-1" transform="translate(.284 4.433)"/>
+            <path id="Line_2" d="M0 8L8 0" class="cls-1" transform="translate(4.284 .433)"/>
+        </g>
+        <g id="Ellipse_8" fill="none" stroke="#118cd9" stroke-width="2px" transform="translate(756 2442)">
+            <circle cx="15.5" cy="15.5" r="15.5" stroke="none"/>
+            <circle cx="15.5" cy="15.5" r="14.5"/>
+        </g>
+    </g>
+</svg>
