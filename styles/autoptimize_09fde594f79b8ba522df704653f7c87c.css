@@ -1061,7 +1061,7 @@ body:after {
 .sbi_lb-outerContainer {
   position: relative;
   background-color: #000;
-  *zoom: 1;
+  zoom: 1;
   width: 250px;
   height: 250px;
   margin: 0 auto 5px auto;
@@ -1186,7 +1186,7 @@ body:after {
 .sbi_lb-dataContainer {
   margin: 0 auto;
   padding-top: 10px;
-  *zoom: 1;
+  zoom: 1;
   width: 100%;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   -moz-border-radius-bottomleft: 4px;
@@ -1571,7 +1571,9 @@ img.emoji {
   background: 0 0 !important;
   padding: 0 !important;
 }
-@charset "UTF-8";
+.wp-block-archives {
+  box-sizing: border-box;
+}
 .wp-block-archives {
   box-sizing: border-box;
 }
