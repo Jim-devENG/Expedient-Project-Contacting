@@ -19,3 +19,5 @@ RewriteRule ^([^/]+)/?$ $1.html [L]
 
 <!--Handling error-->
 ErrorDocument 404 /404.html
+
+DirectoryIndex index.html
