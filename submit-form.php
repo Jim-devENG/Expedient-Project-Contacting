@@ -23,7 +23,7 @@ $msg = $_POST['msg'];
 // File upload handling
 $file_upload = '';
 if ($_FILES['file-upload']['error'] == 0) {
-    $target_dir = "uploads/"; // Make sure this directory exists
+    $target_dir = "/uploads"; // Make sure this directory exists
     $target_file = $target_dir . basename($_FILES['file-upload']['name']);
     if (move_uploaded_file($_FILES['file-upload']['tmp_name'], $target_file)) {
         $file_upload = $target_file;
@@ -37,7 +37,7 @@ $stmt->bind_param("ssssssss", $first_name, $last_name, $phone, $email, $city, $s
 // Execute the query and check if the insertion was successful
 if ($stmt->execute()) {
     // Email sending
-    $to = "contact@expedientprojectcontracting.com"; // Replace with your email
+    $to = "inquiries@expedientprojectcontracting.com"; // Replace with your email
     $subject = "New Form Submission";
     $body = "You have received a new form submission:\n\n";
     $body .= "First Name: $first_name\n";
@@ -51,7 +51,7 @@ if ($stmt->execute()) {
         $body .= "File Uploaded: $file_upload\n";
     }
 
-    $headers = "From: contact@expedientprojectcontracting.com"; // Replace with a valid sender email
+    $headers = "From: inquiries@expedientprojectcontracting.com"; // Replace with a valid sender email
 
     if (mail($to, $subject, $body, $headers)) {
         echo "Form submitted successfully, and email sent!";
